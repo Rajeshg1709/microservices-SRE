@@ -12,7 +12,7 @@ provider "aws" {
 
   default_tags {
     tags = {
-      owner = "rajesh"
+      owner = "tfadmin"
     }
   }
 }

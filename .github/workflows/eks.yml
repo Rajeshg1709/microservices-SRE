@@ -25,7 +25,7 @@ jobs:
           aws-region: us-east-2
 
       - name: setup terraform
-        uses: hashicorp/setup-terraform@2.0.3
+        uses: hashicorp/setup-terraform@v2.0.3
         with:
           terraform_version: 1.7.4
 

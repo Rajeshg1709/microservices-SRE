@@ -40,11 +40,11 @@ jobs:
       - name: terraform apply
         if: ${{ github.event.inputs.apply_or_destroy == 'apply' }}
         working-directory: Terraform
-        run: terraform apply
+        run: terraform apply -auto-approve
         
       - name: terraform destroy
         if: ${{ github.event.inputs.apply_or_destroy == 'destroy' }}
         working-directory: Terraform
-        run: terraform init
+        run: terraform destroy -auto-approve
 
           

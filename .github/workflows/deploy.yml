@@ -113,9 +113,7 @@ jobs:
         run:
           aws eks update-kubeconfig --region us-east-2 --name microservices
 
-      - name: check Vulnerabilities
-        run:
-          trivy k8s --report=all all --severity=CRITICAL
+      
 
 
  

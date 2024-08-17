@@ -62,7 +62,7 @@ jobs:
       - name: check deployment status
         run: 
           sleep 30
-          kubectl get all -o wide -A 
+          kubectl get all -o wide -A
 
 
   terraform_monitoring:

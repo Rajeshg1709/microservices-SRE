@@ -40,7 +40,7 @@ variable "region" {
 }
 
 data "aws_eks_cluster" "eks_cluster" {
-  name = local.name
+  name = local.cluster_name
 }
 
 data "aws_eks_cluster_auth" "eks_cluster_auth" {

@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 env:
-  EKS_DIR: Terraform/eks
+  EKS_DIR: Terraform/EKS
   MONITORING_DIR: Terraform/Monitoring 
     
 jobs:

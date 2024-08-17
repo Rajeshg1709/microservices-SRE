@@ -61,7 +61,10 @@ jobs:
         
       - name: check deployment status
         run: 
-          sleep 30
+          sleep 60
+          
+      - name: get deployment status
+        run:
           kubectl get all -o wide -A
 
 
